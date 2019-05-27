@@ -13,7 +13,7 @@ public class Proxy implements IProxy{
     
     
     Facade facade = new Facade();
-    Usuario us;
+    User us;
     
     public String  operacion(String correo, String clave){
      

@@ -14,21 +14,28 @@ public abstract class User {
     private String Usuario;
     private String Password;
     private String Tipo_Usuario;
+    private String documento;
 
   
 
-    public User(String Usuario, String Password) {
+    public User(String Usuario, String Password,String documento) {
         this.Usuario = Usuario;
         this.Password = Password;
+        this.documento = documento;
     }
 
     public User() {
         super();
     }
 
-  
+    public String getDocumento() {
+        return documento;
+    }
 
-    
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
+
     public abstract boolean ingresar(String Usuario, String Pass);
 
     public abstract void gettipoUsuario();

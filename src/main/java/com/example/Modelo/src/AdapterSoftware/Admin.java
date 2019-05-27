@@ -13,8 +13,8 @@ import javax.swing.JOptionPane;
  */
 public class Admin extends User {
     
-    public Admin(String Usuario, String Password) {
-        super(Usuario, Password);
+    public Admin(String Usuario, String Password,String documento) {
+        super(Usuario, Password,documento);
     }
    
     public Admin(){
@@ -44,5 +44,48 @@ public class Admin extends User {
     boolean IngresarDatos(String Usuario, String Pass) {
         return true;
        
-}
+    }
+
+    @Override
+    public void setTipo_Usuario(String Tipo_Usuario) {
+        super.setTipo_Usuario(Tipo_Usuario); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getTipo_Usuario() {
+        return super.getTipo_Usuario(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setPassword(String Password) {
+        super.setPassword(Password); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getPassword() {
+        return super.getPassword(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setUsuario(String Usuario) {
+        super.setUsuario(Usuario); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getUsuario() {
+        return super.getUsuario(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setDocumento(String documento) {
+        super.setDocumento(documento); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getDocumento() {
+        return super.getDocumento(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
+    
 }
